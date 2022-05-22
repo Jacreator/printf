@@ -21,12 +21,15 @@ mk_buffer cap_s_fmt(mk_buffer buff, va_list var)
 	while (str[i] != '\0')
 	{
 		if (is_printable(str[i]))
+
 		{
 			*buff.box = str[i];
 			buff.size += 1;
 			buff.box++;
 		}
+
 		else
+
 		{
 			hex = cvrt_upper_hex((int)str[i]);
 			buff = add_buff(buff, var, 0, '\\');
