@@ -5,9 +5,9 @@
 * are represented by 0xXX
 * @buff: pointer to the struct buffer
 * @var: holds the parameters that were passed in
+*
 * Return: buffer
 */
-
 mk_buffer cap_s_fmt(mk_buffer buff, va_list var)
 {
 	int i, j;
