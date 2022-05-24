@@ -10,6 +10,7 @@ void check_null(const char *format)
 {
 	if (!format)
 	{
+
 		write(1, "Error\n", 6);
 		exit(98);
 }

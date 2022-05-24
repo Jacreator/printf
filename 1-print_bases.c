@@ -20,6 +20,7 @@ int print_hex(va_list l, mods *f)
 	if (f->hash && *str != '0')
 		len += _puts(HEXA);
 	len += _puts(str);
+
 	return (len);
 }
 
@@ -43,8 +44,10 @@ int print_hex_big(va_list l, mods *f)
 	if (f->hash && *str != '0')
 		len += _puts(HEXA);
 	len += _puts(str);
+
 	return (len);
 }
+
 
 /**
  * print_binary - prints a number in base 2
@@ -61,6 +64,7 @@ int print_binary(va_list l, mods *f)
 	char *str = convert(num, 2, 0);
 
 	(void)f;
+
 	return (_puts(str));
 }
 
@@ -81,7 +85,8 @@ int print_octal(va_list l, mods *f)
 	register short len = 0;
 
 	if (f->hash && *str != '0')
-		len += _putchar('0');
+	       len += _putchar('0');
 	len += _puts(str);
+
 	return (len);
 }
