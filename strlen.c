@@ -7,8 +7,8 @@
  */
 unsigned int _strlen(char *str)
 {
-	unsigned int len = 0;
+		unsigned int len = 0;
 		while (str[len])
-			len++;
-			return (len);
+						len++
+				return (len);
 }
