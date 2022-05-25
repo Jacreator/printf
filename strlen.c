@@ -5,6 +5,7 @@
  * @str: the string to find the length of
  * Return: Length of the string.
  */
+
    unsigned int _strlen(char *str)
 
 {
