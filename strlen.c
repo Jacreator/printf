@@ -10,6 +10,7 @@ unsigned int _strlen(char *str)
 	unsigned int len = 0;
 
 	while (str[len])
-		len++
+		len++;
+
 	return (len);
 }
